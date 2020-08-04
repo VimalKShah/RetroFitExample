@@ -19,7 +19,8 @@ return retrofit;
 }
 }
 
-————————————————————————————-
+————————————————————————————
+
 step 2
 
 public class ApiServices {
@@ -31,7 +32,9 @@ return ApiClient.getClient(BASE_URL).create(AccountService.class);
 }
 
 }
+
 —————————————————————————————
+
 step 3
 
 make an interface public class
@@ -58,7 +61,9 @@ Call doGetProfileImages(@Path(“user_id”) int user_id);
 Call doRemoveImage(@Path(“id”) int user_id,@Path(“sort_order”)String sort_order);
 
 }
-————————————————————————————————–
+
+————————————————————————————————
+
 step 4
 
 call retrofit on main activity
